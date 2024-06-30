@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+* {
+  color: floralwhite;
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  font-weight: normal;
+
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.roll {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.imagetext {
+  max-width: 75%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem; 
+}
+
+img {
+  max-width: 50%;
+  filter: blur(10px);
+  transition: filter 1s ease-out;
+}
+
+img:hover {
+  filter: blur(0px)
+}
+
+hr {
+  width: 75%;
+}
+footer{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 3%;
+  font-size: 0.75rem;
+}

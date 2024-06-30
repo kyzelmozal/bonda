@@ -1,0 +1,65 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+* {
+  color: floralwhite;
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  font-weight: normal;
+
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4rem; 
+}
+
+a {
+  max-width: 50%;
+  text-align: center;
+  margin: 1.5% auto -3% auto; 
+  filter: blur(10px);
+  transition: filter 1s ease-out ;
+}
+
+a:hover {
+  filter: blur(0px);
+}
+
+a:hover + #honda{
+  opacity: 0.75;
+  filter: blur(0px);
+}
+
+#honda {
+  opacity: 0;
+  text-align: center;
+  filter: blur(10ox);
+  transition: opacity 0.5s ease-out;
+  margin-bottom: 5%;
+}
+
+hr {
+  width: 75%;
+  margin-top: auto;
+}
+
+footer{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 3%;
+  font-size: 0.75rem;
+}
