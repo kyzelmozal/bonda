@@ -24,22 +24,22 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 4rem; 
+  font-size: 4rem;
 }
 
 a {
   max-width: 50%;
   text-align: center;
-  margin: 1.5% auto -3% auto; 
-  filter: blur(10px);
-  transition: filter 1s ease-out ;
+  margin: 1.5% auto -3% auto;
+  opacity: 0.5;
+  transition: filter 1s ease-out;
 }
 
 a:hover {
-  filter: blur(0px);
+  opacity: 1;
 }
 
-a:hover + #honda{
+a:hover+#honda {
   opacity: 0.75;
   filter: blur(0px);
 }
@@ -57,7 +57,7 @@ hr {
   margin-top: auto;
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: auto;
   margin-bottom: 3%;

@@ -18,7 +18,7 @@ body {
 }
 
 .todo {
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin-top: 5%;
   margin-bottom: 5%
@@ -30,7 +30,8 @@ body {
 }
 
 img {
-  max-width: 50%
+  max-width: 50%;
+  border-radius: 2rem;
 }
 
 h1 {
@@ -49,7 +50,7 @@ hr {
   width: 75%;
 }
 
-footer{
+footer {
   text-align: center;
   margin-top: auto;
   margin-bottom: 3%;

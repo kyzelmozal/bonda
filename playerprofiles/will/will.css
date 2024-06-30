@@ -30,7 +30,8 @@ body {
 }
 
 img {
-  max-width: 50%
+  max-width: 50%;
+  border-radius: 2rem;
 }
 
 h1 {

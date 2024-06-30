@@ -35,7 +35,7 @@ h2 {
 }
 
 .imagetext {
-  max-width: 75%;
+  max-width: 50%;
   text-align: center;
 }
 
@@ -45,13 +45,14 @@ p {
 }
 
 img {
-  max-width: 50%;
-  filter: blur(10px);
-  transition: filter 1s ease-out;
+  max-width: 80%;
+  border: 0rem solid antiquewhite;
+  opacity: 0.75;
+  border-radius: 2rem;
 }
 
 img:hover {
-  filter: blur(0px)
+  opacity: 1;
 }
 
 hr {
