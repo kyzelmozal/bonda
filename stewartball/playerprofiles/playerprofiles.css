@@ -27,8 +27,8 @@ h1 {
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
 
 a {
@@ -41,15 +41,43 @@ h2 {
  
 }
 
-.roll {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+
+
+@media only screen and (max-width: 1000px) {
+  .roll {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 5%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+   .roll {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .roll {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 5%;
+  }
 }
 
 .imagetext {
-  max-width: 50%;
+  max-width: 90%;
   text-align: center;
 }
 

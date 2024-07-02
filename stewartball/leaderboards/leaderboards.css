@@ -27,8 +27,8 @@ h1 {
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
 
 a {
