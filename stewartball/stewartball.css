@@ -23,18 +23,35 @@ h1 {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
+  margin-bottom: -5%;
 }
 
 .where {
-  display: flex;
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
   justify-content: center;
+  align-items: center;
+  margin-top: 5%;
   margin-bottom: 5%;
+}
+
+@media only screen and (min-width: 500px) {
+   .where {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .where {
+  grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .special { 
   display: flex;
   justify-content: center;
-  width: 40%
+  width: 100%;
 }
 
 h2 {
@@ -43,7 +60,7 @@ h2 {
 }
 
 .imagetext {
-  max-width: 50%;
+  max-width: 75%;
   text-align: center;
 }
 

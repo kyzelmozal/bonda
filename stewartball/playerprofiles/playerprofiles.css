@@ -41,38 +41,29 @@ h2 {
  
 }
 
-
-
-@media only screen and (max-width: 1000px) {
-  .roll {
+.roll {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   margin-top: 5%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .roll {
+  grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1000px) {
    .roll {
-    display: grid;
-    gap: 0.5rem;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin-top: 5%;
     }
 }
 
 @media only screen and (max-width: 500px) {
   .roll {
-  display: grid;
-  gap: 0.5rem;
   grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
-  align-items: center;
-  margin-top: 5%;
   }
 }
 
