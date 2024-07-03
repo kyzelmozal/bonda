@@ -1,58 +1,41 @@
-html {
-  height: 100%;
-  width: 100%;
-  background-color: dimgray;
-}
+
 
 * {
   color: floralwhite;
-  font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
   font-weight: normal;
   text-decoration: none;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  height: 200vh;
+  background-color: dimgray;
 }
 
-h1 {
-  font-size: 5rem;
+.container {
+  display: block;
   text-align: center;
+  margin: 25% 0; 
 }
 
 h2 {
   text-align: center;
-  font-size: 4rem;
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 6rem;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 a {
   max-width: 50%;
   text-align: center;
-  margin: 1.5% auto -3% auto;
-  opacity: 0.5;
-  transition: filter 1s ease-out;
+  margin: 0% auto 0% auto;
+  animation: blurCity linear both;
+  animation-timeline: view();
 }
 
-a:hover {
-  opacity: 1;
-}
-
-a:hover+#honda {
-  opacity: 0.75;
-  filter: blur(0px);
-}
-
-#honda {
-  opacity: 0;
-  text-align: center;
-  filter: blur(10ox);
-  transition: opacity 0.5s ease-out;
-  margin-bottom: 5%;
+p {
+  font-size: 2rem;
 }
 
 hr {
@@ -65,4 +48,19 @@ footer {
   margin-top: auto;
   margin-bottom: 3%;
   font-size: 0.75rem;
+}
+
+@keyframes blurCity{
+  0% {
+    filter: blur(15px);
+    opacity: 0;
+  }
+  45%, 55% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(15px);
+    opacity: 0;
+  }
 }

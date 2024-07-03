@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(90deg, rgba(218,194,194,1) 0%, rgba(255,63,0,1) 100%);
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  font-weight: normal;
+  height: 100vh;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  margin: 25% 0; 
+}
+
+.heading {
+  font-size: 5rem;
+  margin: 2.5%;
+  animation: blurCity linear both;
+  animation-timeline: view();
+}
+
+@keyframes blurCity{
+  0% {
+    filter: blur(40px);
+  }
+  45%, 55% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
