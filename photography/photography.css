@@ -1,0 +1,130 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.heading1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.heading2 {
+  font-size: 3rem;
+  font-weight: 250;
+}
+
+.introduction {
+  padding: 1.5rem;
+  width: 80%;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: introheading 3s cubic-bezier(.97,.11,1,.35) 1s;
+  animation-fill-mode: forwards;
+  border: solid 1px white;
+}
+
+.hover {
+  position: fixed;
+  top: 10%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  z-index: 3;
+  animation: caption 1s linear 5s both;
+  border: solid 1px white;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+.gallery {
+  display: grid;
+  place-items: center;
+  gap: 2vmin;
+  z-index: 1;
+  margin: 20vh 0 20vh 0;
+}
+
+.image1 {
+  width: 20vw;
+  aspect-ratio: 5 / 6;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform filter 1s cubic-bezier(.02, .68, .33, .9);
+  animation: images 6s linear 3s both;
+  filter: blur(4px);
+}
+
+.image1:hover {
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+
+@keyframes introheading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes images {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes caption {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
