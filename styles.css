@@ -1,27 +1,39 @@
-
-
 * {
-  color: floralwhite;
-  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-  font-weight: 100;
+  color: antiquewhite;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
 }
 
 body {
-  display: block;
-  height: 200vh;
-  background-color: dimgray;
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .container {
-  display: block;
-  text-align: center;
-  margin: 25% 0; 
+  aspect-ratio: 5 / 7;
+  width: 30vmin;
+}
+
+.card {
+  width: 30vmin;
+  aspect-ratio: 5 / 7;
+  background-color: black;
+  border-radius: 1vmin;
+  border: 1vmin solid antiquewhite;
+  position: absolute;
+  transition: transform 1s cubic-bezier(.02,.68,.33,.9);
+  display: grid;
+  place-items: center;
+  z-index: auto;
 }
 
 h2 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 3vmin;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -30,18 +42,17 @@ a {
   max-width: 50%;
   text-align: center;
   margin: 0% auto 0% auto;
-  animation: blurCity linear both;
-  animation-timeline: view();
 }
 
 p {
-  font-size: 2rem;
+  font-size: 3vmin;
 }
 
 hr {
   width: 75%;
   margin-top: auto;
 }
+
 
 footer {
   text-align: center;
@@ -50,17 +61,32 @@ footer {
   font-size: 0.75rem;
 }
 
-@keyframes blurCity{
-  0% {
-    filter: blur(15px);
-    opacity: 0;
-  }
-  45%, 55% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-  100% {
-    filter: blur(15px);
-    opacity: 0;
-  }
+.container:hover > #one {
+  transform: translate(-150%, 39%) rotate(-12deg);
+}
+
+.container:hover > #two {
+  transform: translate(-90%, 15%) rotate(-7deg);
+}
+
+.container:hover > #three {
+  transform: translate(-30%, 0%) rotate(-3deg);
+}
+
+.container:hover > #four {
+  transform: translate(30%, 0%) rotate(3deg);
+}
+
+.container:hover > #five {
+  transform: translate(90%, 15%) rotate(7deg);
+}
+
+.container:hover > #six {
+  transform: translate(150%, 30%) rotate(12deg);
+}
+
+footer {
+  color: antiquewhite;
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
 }

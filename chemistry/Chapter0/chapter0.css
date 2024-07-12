@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-weight: 100;
+  display: grid;
+  place-items: center;
+  color: antiquewhite;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-attachment: fixed;
+  text-shadow: 1vmin 1vmin 2vmin gray;
+}
